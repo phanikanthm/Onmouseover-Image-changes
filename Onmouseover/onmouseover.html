@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <style>
+    #img1{
+        width: 300px;;
+        height:40%;
+    }
+    #img2{
+        width:300px;
+        height:40%;
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <img  onmouseover="img1()" onmouseout="img2()" id="img1" src="Lightbottle.jpg"/>
+
+
+    <script>
+        function img1(){
+            setInterval(img1,5000);
+            document.getElementById("img1").src="Seabottle.jpg";
+        }
+        function img2(){
+            setTimeout(img2,5000);
+            document.getElementById("img1").src="Lightbottle.jpg";
+        
+        }
+    
+    </script>
+
+</body>
+</html>
